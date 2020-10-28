@@ -138,8 +138,6 @@ http://220.158.149.28:8180/TV00000000000000000066@HHZT;LIVE
 http://220.158.149.28:8180/TV00000000000000000068@HHZT;LIVE
 #EXTINF:-1 tvg-id="130" tvg-logo="http://tv.sason.xyz/logo/wxxw.png" group-title="D.香港",TVB新闻
 http://tv.sason.xyz/proxy/tvb.php?id=xw
-#EXTINF:-1 tvg-id="130" tvg-logo="http://tv.sason.xyz/logo/wxxw.png" group-title="D.香港",TVB新闻 2
-http://www.pvbox.online:9090/hls/7T69TY59M/index.m3u8
 #EXTINF:-1 tvg-id="133" tvg-logo="http://tv.sason.xyz/logo/wxcjzx.png" group-title="D.香港",TVB财经资讯
 http://tv.sason.xyz/proxy/tvb.php?id=cj
 #EXTINF:-1 tvg-id="" tvg-logo="https://news.now.com/revamp2014/images/logo.png" group-title="D.香港",Now新聞
@@ -170,8 +168,6 @@ http://media.fantv.hk/m3u8/archive/channel2.m3u8
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-id="126" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" group-title="D.香港",翡翠台                  
 http://m.567it.com/jade.m3u8
-#EXTINF:-1 tvg-id="126" tvg-logo="https://poster.starhubgo.com/Linear_channels2/838_1920x1080_HTV.png" group-title="D.香港",翡翠台2                
-http://www.pvbox.online:9090/hls/R20YLrkN1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://www.hkatv.com/images/logo.png" group-title="D.香港",亞洲電視台
 https://15813114727637862976168173814320.live.prod.hkatv.com/a1_cbr_hi.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Now_Live_News_logo.svg/1200px-Now_Live_News_logo.svg.png" group-title="D.香港",Now直播台
