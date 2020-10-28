@@ -252,17 +252,3 @@ http://220.158.149.28:8180/TV00000000000000000069@HHZT;LIVE
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
 #EXTINF:-1 tvg-id="0" tvg-logo="http://tv.sason.xyz/logo/blank.png" group-title="G.海外",新加坡8频道
 http://d34e90s3s13i7n.cloudfront.net/hls/ch8ctv/master02.m3u8
-#EXTINF:-1 tvg-id="2054" tvg-logo="http://tv.sason.xyz/logo/scwhly.png" group-title="H.四川本地",SCTV-2 文化旅游
-http://scgctvshow.sctv.com/hdlive/sctv2/1.m3u8
-#EXTINF:-1 tvg-id="2055" tvg-logo="http://tv.sason.xyz/logo/scjj.png" group-title="H.四川本地",SCTV-3 经济
-http://scgctvshow.sctv.com/hdlive/sctv3/1.m3u8
-#EXTINF:-1 tvg-id="2056" tvg-logo="http://tv.sason.xyz/logo/scxw.png" group-title="H.四川本地",SCTV-4 新闻
-http://scgctvshow.sctv.com/hdlive/sctv4/1.m3u8
-#EXTINF:-1 tvg-id="2057" tvg-logo="http://tv.sason.xyz/logo/scyswy.png" group-title="H.四川本地",SCTV-5 影视文艺
-http://scgctvshow.sctv.com/hdlive/sctv5/1.m3u8
-#EXTINF:-1 tvg-id="2059" tvg-logo="http://tv.sason.xyz/logo/scfnet.png" group-title="H.四川本地",SCTV-7 妇女儿童
-http://scgctvshow.sctv.com/hdlive/sctv7/1.m3u8
-#EXTINF:-1 tvg-id="2062" tvg-logo="http://tv.sason.xyz/logo/sckj.png" group-title="H.四川本地",SCTV-8 科教
-http://118.123.60.9:8114/LIVES/Fsv_otype=1&FvSeid=&Fsv_filetype=mull&Fsv_chan_hls_se_idx=067&Provider_id=&Pcontent_id=index.m3u8
-#EXTINF:-1 tvg-id="2061" tvg-logo="http://tv.sason.xyz/logo/scggxc.png" group-title="H.四川本地",SCTV-9 公共乡村
-http://scgctvshow.sctv.com/hdlive/sctv9/1.m3u8
