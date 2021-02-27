@@ -1,0 +1,50 @@
+于众所周知的原因，大家有的时候pull docker hub上的镜像是很困难的，下载到99%就这么不动了也是很正常的事情
+
+这个时候以下步骤是100%可以解决问题的：
+
+1、找一台国外的服务器安装docker环境，执行docker pull、docker save，将镜像保存为tar包
+
+2、在国外服务器下载这个tar包
+
+3、从国内服务器上下载并load这个tar包
+
+然而并非是每个人都有国外服务器可供使用的，这个时候play-with-docker（PWD，国外服务器，使用github账号登录，免费使用）就能帮上大忙了。
+
+我们在PWD上pull镜像，然后docker save保存为tar包，第一步搞定。
+
+上传下载呢，这个时候就要用上Firefox Send了，上传在PWD docker宿主上save的tar包，获取下载地址，在国外服务器上下载load，第二步第三步搞定。
+
+命令行上传，timvisee的ffsend镜像最香了，一句docker命令搞定上传，一句命令搞定下载，以nginx镜像下载上传为例，下面开始上命令了：
+
+ 
+
+1、打开https://labs.play-with-docker.com/登录之后点击“+ Add new instance”创建docker实例，然后拉取并导出镜像
+
+docker pull nginx
+docker save nginx > nginx_image.tar
+2、上传nginx_image.tar获取https下载地址
+
+docker run --rm -it -v $(pwd):/data timvisee/ffsend upload nginx_image.tar
+# Upload complete                                                                                                                                                                
+# https://send.firefox.com/download/10fdd1decf80a089/#p7LtIPt02FWbNEMz2tSx1Q
+3、回国内的服务器，下载nginx_image.tar
+
+docker run --rm -it -v $(pwd):/data timvisee/ffsend download https://send.firefox.com/download/10fdd1decf80a089/#p7LtIPt02FWbNEMz2tSx1Q
+控制台提示“You're downloading an archive, extract it into the selected directory? [Y/n]: ”，输入N即可
+
+4、执行docker load命令导入nginx镜像
+
+docker load < nginx_image.tar
+之后执行docker images查看镜像即可
+
+有同学说ffsend镜像拉取不下来，这里我已经把ffsend镜像导出为tar包了，上蓝奏云下载吧
+
+下载:https://www.lanzous.com/i7zluib 密码:7fsk
+
+ 
+
+后记：
+
+将添加ffsend命令
+
+alias ffsend='docker run --rm -it -v "$(pwd):/data" timvisee/ffsend'
